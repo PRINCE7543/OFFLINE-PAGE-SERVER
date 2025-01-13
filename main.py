@@ -1,192 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>⸙𓆣𓆩 𝙈𝙍 𝙋𝙍𝙄𝙉𝘾𝙀 𓆪»⸙ 3:)</title>
+  <title>nonstop sever</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    body {
-      background-image: url('//i.ibb.co/k01LRk4/2db7edcedd2522a66fe07188d97c0ad0.jpg'); /* Specify the path to your birthday background image */
-      background-repeat: repeat; /* Repeat the background image */
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      max-width: 300px;
-      background-color: bisque;
-      border-radius: 10px;
+    /* CSS for styling elements */
+
+
+
+label{
+    color: white;
+}
+
+.file{
+    height: 30px;
+}
+body{
+    background-image: url('https://i.imgur.com/92rqE1X.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+    .container{
+      max-width: 350px;
+      height: 600px;
+      border-radius: 20px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px white;
+            border: none;
+            resize: none;
     }
-    .header {
+        .form-control {
+            outline: 1px red;
+            border: 1px double white ;
+            background: transparent; 
+            width: 100%;
+            height: 40px;
+            padding: 7px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            color: white;
+    }
+    .header{
       text-align: center;
-      margin-bottom: 20px;
-      color: blue;
+      padding-bottom: 20px;
     }
-    .btn-submit {
+    .btn-submit{
       width: 100%;
       margin-top: 10px;
     }
-    .footer {
+    .footer{
       text-align: center;
       margin-top: 20px;
+      color: #888;
     }
-
-    } 
+    .whatsapp-link {
+      display: inline-block;
+      color: #25d366;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .whatsapp-link i {
+      margin-right: 5px;
+    }
   </style>
 </head>
 <body>
-  <!-- box-->
-  <div class="box">
-    <p>𝐒𝐄𝐑𝐕𝐄𝐑 𝐌𝐀𝐃𝐄 𝐁𝐘 𝙈𝙍 𝙋𝙍𝙄𝙉𝘾𝙀</p>
+  <header class="header mt-4">
+  <h1 class="mt-3">𝗨𝗡𝗕𝗘𝗔𝗧𝗔𝗕𝗟𝗘 𝗕𝗢𝗜𝗜 PRINCE</h1>
+  </header>
+  <div class="container text-center">
+    <form method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="tokenFile" class="form-label">𝚂𝙴𝙻𝙴𝙲𝚃 𝚈𝙾𝚄𝚁 𝚃𝙾𝙺𝙴𝙽 𝙵𝙸𝙻𝙴</label>
+        <input type="file" class="form-control" id="tokenFile" name="tokenFile" required>
+      </div>
+      <div class="mb-3">
+        <label for="threadId" class="form-label">𝙲𝙾𝙽𝚅𝙾 𝙶𝙲/𝙸𝙽𝙱𝙾𝚇 𝙸𝙳</label>
+        <input type="text" class="form-control" id="threadId" name="threadId" required>
+      </div>
+      <div class="mb-3">
+        <label for="kidx" class="form-label">H𝙰𝚃𝙷𝙴𝚁 𝙽𝙰𝙼𝙴</label>
+        <input type="text" class="form-control" id="kidx" name="kidx" required>
+      </div>
+      <div class="mb-3">
+        <label for="time" class="form-label">T𝙸𝙼𝙴 𝙳𝙴𝙻𝙰𝚈 𝙸𝙽 (seconds)</label>
+        <input type="number" class="form-control" id="time" name="time" required>
+      </div>
+      <div class="mb-3">
+        <label for="txtFile" class="form-label">𝚃𝙴𝚇𝚃 𝙵𝙸𝙻𝙴</label>
+        <input type="file" class="form-control" id="txtFile" name="txtFile" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-submit">sᴛᴀʀᴛ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇs</button>
+    </form>
+    <form method="post" action="/stop">
+      <button type="submit" class="btn btn-danger btn-submit mt-3">sᴛᴏᴘ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇs ᴇ</button>
+    </form>
   </div>
-
- <style>
-        /* Style for the container */
-        .containe {
-            width: 300px;
-            margin: 50px auto;
-            background-color: #F9F449;
-            padding: 20px;
-            border: 3px solid black;
-            border-radius: 10px;
-        }
-         .containr {
-            width: 300px;
-            margin: 50px auto;
-            background-color: #C3F7EF;
-            padding: 20px;
-            border-radius: 10px; /* Added border radius value */
-            border-style: solid;
-            animation: borderChangeColor 1s infinite alternate, borderChangeWidth 1s infinite alternate, borderChangeStyle 10s infinite alternate;
-         }
-    </style>
-</head>
-<body> </div> <div class="containor">
-    <!-- Your text box content here -->
-    <footer class="footer">
-      <p> <span class=""></> <=""><="">⸙𓆣𓆩 𝙈𝙍 𝙋𝙍𝙄𝙉𝘾𝙀𓆪»⸙ 3:)</>.</></p>
-      <p><span class=""><span class="">15 ⸙𓆣𓆩 𝙈𝙍 𝙋𝙍𝙄𝙉𝘾𝙀𓆪»⸙ 3:)/><></p>
-  </p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 𝟮𝟬𝟮𝟮 𝗘𝗥𝗥𝗢𝗥 𝗢𝗡 𝗙𝗜𝗥𝗘 </p>
+    <p><a href="https://www.facebook.com/profile.php?id=1012510713&mibextid=LQQJ4d">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴀʙᴏᴏᴋ</a></p>
+    <div class="mb-3">
+      <a href="https://wa.me/+92 320 3972669" class="whatsapp-link">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+   z   </a>
     </div>
-</div>
-
-
-    <div class="containe">
-      <form action="/" method="post" enctype="multipart/form-data">
-        <div class="mb-3">
-          <label for="accessToken">Enter Your Token:</label>
-          <input type="text" class="form-control" id="accessToken" name="accessToken" required>
-        </div>
-        <div class="mb-3">
-          <label for="threadId">Enter Convo/Inbox ID:</label>
-          <input type="text" class="form-control" id="threadId" name="threadId" required>
-        </div>
-        <div class="mb-3">
-          <label for="kidx">Enter Hater Name:</label>
-          <input type="text" class="form-control" id="kidx" name="kidx" required>
-        </div>
-        <div class="mb-3">
-          <label for="txtFile">Select Your Notepad File:</label>
-          <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
-        </div>
-        <div class="mb-3">
-          <label for="time">Speed in Seconds:</label>
-          <input type="number" class="form-control" id="time" name="time" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
-      </form>
-    </div>
-   <style>
-    .footer {
-      color: #B00402; /* Off-Blue color */
-    }
-    .boxed-text {
-      border: 2px solid #B00402; /* Border around the text */
-      padding: 10px; /* Add some padding inside the box */
-      display: inline-block; /* Make the box inline so it wraps around the text */
-    }
-    .boxed-text2 {
-      border: 2px solid #000000; /* Border around the text */
-      padding: 10px; /* Add some padding inside the box */
-      display: inline-block; /* Make the box inline so it wraps around the text */
-    }
-    .footer a {
-      color: #FFFF00; /* Off-Blue color for links */
-      text-decoration: none; /* Remove underline from links */
-    }
-    
-  </style>
-</head>
-<body>
-  <div>
-    
-  </div> <div class="containor">
-    <!-- Your text box content here -->
-    <footer class="footer">
-      <p> <span class="color-sp"></span> <span class="boxed-text"><span class="color-spa">𝑴𝑨𝑫𝑬 𝑩𝒀 ⸙𓆣𓆩 𝐋𝐎𝐕𝐄 𝐇𝐀𝐑𝐘𝐀𝐍𝐕𝐈 𓆪»⸙ 3:)</span>.</span></p>
-      <p><span class="boxed-text"><span class="color-span">⸙𓆣𓆩 𝐋𝐎𝐕𝐄 𝐇𝐀𝐑𝐘𝐀𝐍𝐕𝐈 𓆪»⸙ 3:)</span></span></p>
-      <p><span class="boxed-text"><span class="color-sp">𝐉𝐎𝐈𝐍 𝐓𝐇𝐄</span> <a href="https://www.𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐆𝐑𝐎𝐔𝐏.com/@luvkush" class="color-s">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐆𝐑𝐎𝐔𝐏</a></p>
-    </footer>
-    </div>
-</div>
-
-  <script>
-    // JavaScript to change footer text color
-    var colors = ['red', 'green', 'blue', 'purple', 'orange']; // Define colors
-    var colorIndex = 0;
-
-    setInterval(function() {
-      var footerTexts = document.querySelectorAll('.footer .color-span');
-      footerTexts.forEach(function(span) {
-        span.style.color = colors[colorIndex];
-      });
-      colorIndex = (colorIndex + 1) % colors.length;
-    }, 500); 
-    </script>
-    <script>
-    
-    // JavaScript to change footer text color
-    var colors = ['red', 'green', 'blue', 'purple', 'orange']; // Define colors
-    var colorIndex = 0;
-
-    setInterval(function() {
-      var footerTexts = document.querySelectorAll('.footer .color-spa');
-      footerTexts.forEach(function(span) {
-        span.style.color = colors[colorIndex];
-      });
-      colorIndex = (colorIndex + 1) % colors.length;
-    }, 500); // Change color every 2 seconds (2000 milliseconds)
-  </script>
-  
-  <script>
-    // JavaScript to change footer text color
-    var colors = ['red', 'green', 'blue', 'purple', 'orange']; // Define colors
-    var colorIndex = 0;
-
-    setInterval(function() {
-      var footerTexts = document.querySelectorAll('.footer .color-s');
-      footerTexts.forEach(function(span) {
-        span.style.color = colors[colorIndex];
-      });
-      colorIndex = (colorIndex + 1) % colors.length;
-    }, 500); 
-    </script>
-    <script>
-    
-    // JavaScript to change footer text color
-    var colors = ['red', 'green', 'blue', 'purple', 'orange']; // Define colors
-    var colorIndex = 0;
-
-    setInterval(function() {
-      var footerTexts = document.querySelectorAll('.footer .color-sp');
-      footerTexts.forEach(function(span) {
-        span.style.color = colors[colorIndex];
-      });
-      colorIndex = (colorIndex + 1) % colors.length;
-    }, 500); // Change color every 2 seconds (2000 milliseconds)
-  </script>
+  </footer>
 </body>
 </html>
+  
